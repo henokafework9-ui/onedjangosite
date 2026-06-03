@@ -1,0 +1,59 @@
+{% load static%}
+{% include 'nav.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <link rel="stylesheet" href="{% static 'css/contact.css'%}">
+<body>
+<h1></h1>
+       
+    <div class="totalbox">
+        <form method="post">
+        <h2> Send Message to me</h2>
+        {% csrf_token%}
+        {{form.as_p}}
+        <button type="submit" class="button">Send </button>
+    </form>
+    </div>
+    <div class="phone" ><button class="phone" onclick="Call();">
+        <img src="{% static 'image/phone.jpg'%}">call to me</button>
+    </div><br>
+     <div class="socialmedia">
+    <a href="http://t.me/@henokafework" target="_blank">
+           <img src="{%static 'image/telegram.jpg'%}">  Telegram</a>
+        <a href="http://www.instagram.com/henokafework9"> 
+            <img src="{% static 'image/instagram.jpg'%}">Instagram</a>
+        <a href="http://www.linkedin.com/in/henok-afework-a5348b401/"> 
+            <img src="{% static 'image/linkedin.jpg'%}">linked In </a>
+        <a href="http://github.com/henokafework9-ui">
+            <img src="{% static 'image/github.jpg'%}">Git Hub</a>
+    </div>
+    
+    <script>
+           function sendmessage(){
+             let name=document.querySelector(".name").value;
+             let secondname = document.querySelector(".least").value;
+             let email = document.querySelector(".emailbox").value;
+            let msg= document.querySelector(".msg").value;
+            if( msg==="" || name==="" ){
+                alert("please fill correctly");
+                return;
+            }
+           let phoneno="251947257165";
+            
+            
+            const fullmessage = "username:"+ name + secondname + "\nemail:"
+            +email+"\nmessage:"+msg;
+            window.location.href = "sms:"+phoneno+"?body="+
+            encodeURIComponent(fullmessage);
+        }
+        function Call(){
+            window.location.href= "tel:251947257165";
+        }
+    </script>
+</body>
+</html>

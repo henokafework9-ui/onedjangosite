@@ -1,0 +1,93 @@
+body{
+      background-image: url("../image/photo_2026-05-23_06-12-21.jpg");
+     background-size: cover;
+     filter: brightness(88%);
+    }
+h1{
+    border: solid rgb(12, 117, 112) 2px;
+    border-width: 1px;
+    animation: move 10s infinite;
+    position: relative;
+
+
+}
+.project{
+    display:block;
+}
+.game,.todo,.maths,.copy{
+    border: solid white;
+    width: 38%;
+    display: inline-block;
+    height: auto;
+    border-radius: 10px;
+    margin: 0.3cm;
+    vertical-align: top;
+    border-color: rgb(12, 117, 112);
+    margin-left: 2%;
+    margin-top: 50px;
+    animation: project 2s ease-in-out;
+}
+
+h2{
+    color: aliceblue;
+    font-size: 6vh;
+    text-align: center;
+    filter: brightness(80%);
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 2vh;
+    padding: 3px;
+    margin-left:1%;
+    margin-top: 1%;
+}
+@media(max-width:768px){
+   h1{
+    display: none;
+   } 
+   .game,.todo,.maths,.copy{
+    border: solid white;
+    width: 97%;
+    display: inline-block;
+    height: auto;
+    border-radius: 10px;
+    margin: 0.05cm;
+    vertical-align: top;
+    border-color: rgb(12, 117, 112);
+    margin-top: 50px;
+    animation: project 2s ease-in-out;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    padding: 3px;
+    margin-left:1%;
+    margin-top: 1%;
+}
+h3{
+    color: rgb(28, 192, 192);
+    font-size: 23px;
+    margin-left:10px;
+}
+}
+@keyframes move{
+    from{
+       transform: translateY(0px);
+    }
+    to{
+        transform: translateY(936px);
+    }
+}
+@keyframes project{
+    from{
+        transform: translateX(-1000px);
+    }
+    to{
+        transform: translateX(0px);
+    }
+}
+h3{
+    color: rgb(28, 192, 192);
+    font-size: 28px;
+    margin-left:10px;
+}

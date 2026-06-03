@@ -1,0 +1,221 @@
+body{
+     background-image: url("../image/photo_2026-05-23_06-12-21.jpg");
+     background-size: cover;
+     background-repeat:no-repeat ;
+     filter: brightness(88%);
+    }
+.totalbox{
+    margin-left:33%;
+    border: solid rgb(24, 179, 179);
+    border-radius: 25px;
+    width: 600px;
+    height: auto;
+    margin-top: 5vh;
+    animation: total 1s ease-in-out;
+}
+label{
+    color: rgb(255, 255, 255);
+    font-size: 2.5vh;
+    margin-left: 35px;
+}
+input{
+    background-color: transparent;
+    border-color: gray;
+    border-radius: 8px;
+    margin-top: 1cm;
+    font-size: 26px;
+    text-align: center;
+    color: aliceblue;
+}
+textarea{
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: gray;
+}
+h1{
+    border: solid rgb(12, 117, 112) 2px;
+    border-width: 1px;
+    width: 100%;
+    animation: move 10s infinite;
+    position: relative;
+}
+h2{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+}
+.button{
+    border: solid aqua;
+    background-color: aqua;
+    padding: 3px;
+    margin-left: 40%;
+    font-size: 2vw;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 1cm;
+    font-weight: 800;
+    transition: background-color 1s;
+
+}
+button:hover{
+    background-color:transparent;
+    color: aqua;
+    cursor:pointer;
+}
+img{
+    width: 60px;
+    height: 65px;
+    border-radius: 50px;
+    margin-right: 0.5cm;
+}
+.phone,.totalbox{
+    display: inline-block;
+    vertical-align: middle;
+}
+.phone{
+    color: white;
+    font-size: 45px;
+    margin-left: 10px;
+    margin: 15px;
+    background-color: transparent;
+    border: none;
+
+}
+.phone:hover{
+    color: aqua;
+    opacity: 0.7;
+    cursor: pointer;
+}
+img,.socialmedia a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.socialmedia a{
+    vertical-align: top;
+    margin: 0.5cm;
+    text-decoration: none;
+    color:rgb(186, 184, 184);
+    border: solid  rgb(11, 151, 151);
+    width: 20.5vw;
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 32px;
+    height: auto;
+    padding: 1vh;
+    display: inline-block;
+    animation: rotate 1s ease-in-out;
+}
+.socialmedia a:hover{
+    opacity: 0.6;
+    border-color: gray;
+    color: aqua;
+}
+/*for mobile*/
+@media(max-width:768px){
+    .totalbox{
+    border: solid rgb(24, 179, 179);
+    border-radius: 25px;
+    margin-left: -0.1cm;
+    width: 97%;
+    height: auto;
+    margin-top: 0.5cm;
+    animation: total 1s ease-in-out;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+h1{
+    display: none;
+}
+label{
+    color: rgb(182, 181, 181);
+    font-size: 23px;
+    margin-left: 25px;
+}
+input{
+    background-color: transparent;
+    border-color: gray;
+    border-radius: 8px;
+    margin-top: 0.5cm;
+    margin-left: 0.2cm;
+    font-size: 26px;
+    text-align: center;
+    color: aliceblue;
+    width: 200px;
+}
+textarea{
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: gray;
+    width: 250px;
+       margin-left: 0.2cm;
+}
+h2{
+    color: rgb(239, 239, 239);
+    text-align: center;
+    font-size: 23px;
+}
+
+.button{
+    border: solid aqua;
+    background-color: aqua;
+    font-size: 30px;
+    border-radius: 10px;
+    margin-bottom: 3vh;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    font-weight: 800;
+    transition: background-color 1s;
+
+}
+.socialmedia a{
+    vertical-align: top;
+    margin: 0.5cm;
+    text-decoration: none;
+    color:rgb(186, 184, 184);
+    border: solid  rgb(11, 151, 151);
+    width: 200px;
+    border-radius: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    height: auto;
+    padding: 1vh;
+    display: inline-block;
+    animation: rotate 1s ease-in-out;
+}
+}
+@keyframes rotate{
+    from{
+        transform: rotate(180deg);
+        scale: 0;
+        opacity: 0;
+    }
+    to{
+        transform: rotate(0deg);
+        scale: 1;
+        opacity: 1;
+    }
+}
+ @keyframes move{
+    from{
+       transform: translateY(0vh);
+    }
+    to{
+        transform: translateY(100vh);
+    }
+}
+@keyframes total{
+    from{
+        transform: translatey(100px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}

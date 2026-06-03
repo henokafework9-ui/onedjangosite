@@ -1,0 +1,109 @@
+
+.navdiv{
+    border: solid rgb(133, 135, 135) 2px;
+    border-radius: 25px;
+    width: 67vw;
+    background-color: transparent ;
+    margin-left: 11.6%;
+    height: 60px;
+    margin-top: 40px;
+    vertical-align: top;
+    top: 2px;
+        }
+nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+        }
+.navdiv a{
+            text-decoration: none;
+            color: white;
+            margin-left: 11%;
+            margin-right: 6%;
+            font-size: 170%;
+            
+        }
+.navdiv a:hover{
+            opacity: 0.5;
+        }
+select{
+    margin-left: 13%;
+    border: none;
+    background-color: transparent;
+    font-size: 170%;
+    color: white;
+    cursor: pointer;
+    display: flexbox;
+   
+
+}
+select:hover{
+    opacity: 0.6;
+}
+option{
+    background-color: rgb(11, 11, 54);
+    color: white;
+    font-size:26px;
+}
+.option2{
+    border: solid none;
+    font-size: 26px;
+    background: linear-gradient(aqua, rgb(133, 125, 125));
+    border-radius: 25px;
+    padding:4px ;
+    color:rgb(255, 253, 253);
+}
+.get{
+    margin-top: 45px;
+    margin-right: 70px;
+}
+.navdiv,.get{
+    display: inline-block;
+}
+.antinav{
+    display: none;
+}
+.menu{
+    display: none;
+}
+
+@media(max-width:768px){
+    .navdiv{
+        display: none;
+    }
+
+    .menu{
+        display: block;
+        border: solid rgb(133, 135, 135) ;
+        color:white;
+        font-weight: 600;
+        background-color: transparent;
+        width: 100%;
+        font-size: 28px;
+        border-radius: 13px;
+    }
+ .antinav{
+    border: solid  rgb(6, 21, 60);
+    border-radius: 20px;
+    background-color: rgb(7, 22, 63);
+    margin-top: 0.5cm;
+    width: 70%;
+    height: auto;
+    position: absolute;
+
+ }   
+ .antinav a{
+    margin: 0.5cm;
+    color: aqua;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 3px;
+ }
+ .antinav select{
+      margin: 0.5cm;
+    color: aqua;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 3px;
+ }
+}

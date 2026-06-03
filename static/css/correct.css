@@ -1,0 +1,9 @@
+body{
+    background-image: url("../image/photo_2026-05-23_06-12-21.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+h1{
+    color: aliceblue;
+    text-align: center;
+}

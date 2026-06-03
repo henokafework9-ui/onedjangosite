@@ -1,0 +1,54 @@
+     {% load static %}
+     <link rel="stylesheet" href="{% static 'css/nav.css'%}">
+     <button class="menu">Menu</button>
+     <div class="antinav">
+          <a href="{%url 'home'%}">Home</a> <br>
+            <a href="{% url 'project'%}">Project</a> <br>
+              <select onchange="location=this.value;">
+                <option>About</option>
+                <option class="option1" value="/bio/">biograph</option>
+                <option value="/skill/">Skill</option>
+            </select><br>
+            <a href="{% url 'contact'%}"> Contact</a> 
+     </div>
+     <div class="navdiv">
+        <nav>
+            <a href="{%url 'home'%}">Home</a> 
+            <a href="{% url 'project'%}">Project</a> 
+             <select onchange="location=this.value;">
+                <option>About</option>
+                <option class="option1" value="/bio/">biograph</option>
+                <option value="/skill/">Skill</option>
+            </select>
+            <a href="{% url 'contact'%}"> Contact</a> 
+        </nav>
+    </div>
+    <div class="get">
+         <select class="option2" onchange="location=this.value;">
+                <option>Socialmedia</option>
+                <option value="http://github.com/henokafework9-ui">
+                    Github</option>
+                <option  value="http://t.me/@henokafework">
+                    Telegram</option>
+                 <option value="http://www.linkedin.com/in/henok-afework-a5348b401/">
+                    Linkedin</option>
+                  <option value="http://www.instagram.com/henokafework9">
+                    Instagram</option>
+            </select>
+    </div>
+<script>
+    const menu1 = document.querySelector(".menu");
+   const list1 = document.querySelector(".antinav")
+
+function newdis(){
+    if(  list1.style.display === "block"){
+      list1.style.display = "none"  
+    }
+    else{
+        list1.style.display = "block"
+    }
+}
+menu1.addEventListener("click", newdis);
+
+</script>
+ 

@@ -1,0 +1,87 @@
+body{
+    background-image: url("../image/photo_2026-05-23_06-12-21.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container{
+    perspective: 800px;
+}
+.ul1{
+    color: rgb(29, 150, 150);
+    font-size: 6vh;
+    filter: brightness(150%);
+    animation: list1 1.5s ease-in-out ; 
+     border: solid rgb(80, 83, 82);;
+    border-radius: 20px;
+    margin-top: 15vh;
+    height: auto;
+    margin-bottom: 1vh;
+    width: 60%;
+    margin-left: 20vw;
+}
+.ul2{
+    color: rgb(29, 150, 150);
+    font-size: 6vh;
+    filter: brightness(150%);
+    animation: list1 1.5s ease-in-out ;
+    margin-left: 20vw;
+    border: solid rgb(80, 83, 82);
+    border-radius: 20px;
+    margin-top: 15vh;
+    height: auto;
+    width: 60%;
+
+}
+.list1,.list2{
+    display:inline-block ;
+}
+li{
+    color: rgb(164, 171, 177);
+    font-family: monospace;
+    font-size: 3vh;
+    margin-bottom: 2vh;
+    filter: brightness(90%);
+    animation :list2 2s ease-in-out;
+
+}
+
+h1{
+    border: solid rgb(12, 117, 112) 2px;
+    border-width: 1px;
+    width: 100%;
+    animation: move 10s infinite;
+    position: relative;
+}
+@media(max-width:768px){
+    h1{
+        display: none;
+    }
+}
+ @keyframes move{
+    from{
+       transform: translateY(0vh);
+    }
+    to{
+        transform: translateY(100vh);
+    }
+}
+@keyframes list1{
+    from{
+        transform:translateX(-400px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}
+@keyframes list2{
+    from{
+        transform:translateX(-500px);
+        opacity: 0;
+    }
+    to{
+        transform:translateX(0px);
+        opacity: 1;
+    }
+}

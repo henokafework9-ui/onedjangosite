@@ -1,0 +1,56 @@
+{% load static %}
+{% include 'nav.html'%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>home page</title>
+  
+     <link rel="stylesheet" href="{% static 'css/home.css'%}">
+</head>
+<body><h1></h1>
+  
+    <div class="explain">
+        <p class="I"> Hi I am </p><br>
+        <p class="H">Henok</p><br>
+        <p class="A">Afework</p><br>
+        <p class="normal"> 
+           
+            a Full-Stack Web Developer  who builds modern ,responsive and <br>
+            user-focused website.i enjoy transforming ideas in to clean, <br>
+            functional ,and visually appealing digital experiances using<br>
+            both front end and back end technologies.<br>
+            I'm passionate about writing clean code, solving problem,and <br>
+             creating smooth user experiances that feel fast and simple. i <br>
+              have a solid knowelage with:-
+
+            <ul>
+                <li>Front-end</li>
+                <li>Back-end</li>
+                <li>Artifical Intelligence</li>
+            </ul>
+           </p>
+
+    </div>
+    <div class="photo">
+        <img class="m" src="{% static 'image/me4.jpg'%}">
+    </div>
+</body>
+<script>
+    const menu1 = document.querySelector(".menu");
+const list1 = document.querySelector(".antichild")
+
+function newdis(){
+    if(  list1.style.display === "block"){
+      list1.style.display = "none"  
+    }
+    else{
+        list1.style.display = "block"
+    }
+}
+menu1.addEventListener("click", newdis);
+
+
+</script>
+</html>
